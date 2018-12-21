@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\segment.o"
+--ropi --rwpi --strict --scatter ".\Objects\7segment.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\7segment.map" -o .\Objects\7segment.axf
